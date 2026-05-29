@@ -40,7 +40,7 @@ Market intelligence is derived from publicly available eBay listing and sold-ite
 
 ## Company
 
-- **Operator**: Core Apps LLC
+- **Operator**: [Core Apps LLC](http://thecoreapps.com/)
 - **Support**: support@trendnable.app
 - **Privacy**: privacy@trendnable.app
 - **Platform**: iOS App Store (free download)
