@@ -1,0 +1,46 @@
+# Trendnable
+
+> Market intelligence for collectors. Real-time Hot Scores, directional signals, and price history across Funko Pop, Trading Cards, Pop Mart, Hot Toys, NECA, Hot Wheels, Signed memorabilia, and ThrillJoy. Available on iOS — Android coming soon.
+
+Trendnable is a mobile app that gives collectors the same data edge resellers have. It tracks eBay sold prices daily, computes a proprietary Hot Score (0–100) for every item, and generates AI-powered directional signals. Premium subscribers get full LLM-narrated "Why it's hot" breakdowns explaining what's driving each item's momentum.
+
+## Pages
+
+- [Home](https://trendnable.app/): Full feature overview, pricing, and App Store download
+- [Privacy Policy](https://trendnable.app/privacy): How Trendnable collects and protects user data
+- [Terms of Use](https://trendnable.app/terms): Terms governing app usage and subscriptions
+
+## Core features
+
+- **Hot Score**: Proprietary 0–100 score computed daily per item, based on listing velocity, watch count, price momentum, and sold volume. Items scoring above 80 are flagged as Top Finds (🔥).
+- **Directional Signals**: Every item gets a Rising / Holding / Cooling / Falling badge derived from eight detection patterns: supply shock, confirmed breakout, quiet accumulation, catalyst spike, volume surge, momentum reversal, demand drift, and price compression.
+- **Price History**: 14+ days of real eBay completed sales charted as sparklines with median, low, high, and daily delta. Sold prices only — not asking prices.
+- **Watchlist**: Track up to 20 items free, unlimited with Premium. Push notifications when a watched item breaks out or starts sliding.
+- **Collection Tracker**: Log owned items and purchase price. Trendnable values the portfolio in real time and shows per-item and total P&L.
+- **AI Narration**: Premium feature. Plain-English breakdown of the data behind each signal — what changed, what's driving it, and what it means.
+- **Sellability Score**: Premium feature. Shows sell-through rate, demand tier, and how quickly an item is likely to sell.
+- **Barcode Scanner**: Scan physical items to instantly identify and add them to collection or watchlist.
+
+## Pricing
+
+- **Free** — $0 forever: Hot Score, 14-day price history, directional signal badge, barcode scanner, watchlist up to 20 items
+- **Premium** — $2.99/month or $21.49/year (save 40%): Unlimited watchlist, full AI narration, 30/90/365-day history charts, Collection P&L, real-time price alerts, Sellability Score, customized daily digest
+
+## Categories tracked
+
+Funko Pop (chases & exclusives), Trading Cards (raw & graded, PSA/BGS), Pop Mart (Labubu & blind boxes), Hot Toys (1/6-scale), NECA (cult horror & pop), Hot Wheels (chases & treasure hunts), Signed memorabilia (authenticated), ThrillJoy (emerging designer toys)
+
+## Fandoms covered
+
+One Piece, Demon Slayer, Star Wars, Pokémon, Marvel, Anime, Labubu, Disney, TMNT, Pop Culture
+
+## Data sources
+
+Market intelligence is derived from publicly available eBay listing and sold-item data. Trendnable is independent and is not affiliated with or endorsed by eBay, Funko, Pop Mart, or any other marketplace or manufacturer referenced.
+
+## Company
+
+- **Operator**: Core Apps LLC
+- **Support**: support@trendnable.app
+- **Privacy**: privacy@trendnable.app
+- **Platform**: iOS App Store (free download)
