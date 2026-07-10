@@ -168,7 +168,7 @@
   }
 
   /* ---------- Fandoms ---------- */
-  const fandoms = ["One Piece", "Demon Slayer", "Star Wars", "Pokémon", "Marvel", "Anime", "Labubu", "Disney", "TMNT", "Pop Culture"];
+  const fandoms = ["Pokémon", "Star Wars", "Marvel", "DC / Batman", "Anime", "Sports", "Video Games", "Nostalgia"];
   const fandomRow = document.getElementById("fandomRow");
   if (fandomRow) {
     fandomRow.innerHTML = fandoms.map((f) => `<span class="fandom-chip">${f}</span>`).join("");

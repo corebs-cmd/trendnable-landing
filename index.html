@@ -37,11 +37,11 @@
       {
         "@type": "Offer",
         "name": "Premium Monthly",
-        "price": "2.99",
+        "price": "1.99",
         "priceCurrency": "USD",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "2.99",
+          "price": "1.99",
           "priceCurrency": "USD",
           "billingDuration": "P1M"
         }
@@ -49,11 +49,11 @@
       {
         "@type": "Offer",
         "name": "Premium Annual",
-        "price": "21.49",
+        "price": "14.99",
         "priceCurrency": "USD",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
-          "price": "21.49",
+          "price": "14.99",
           "priceCurrency": "USD",
           "billingDuration": "P1Y"
         }
@@ -96,7 +96,7 @@
         "name": "Is Trendnable free?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Trendnable is free to download on the App Store and includes Hot Scores, 14-day price history, directional signals, a barcode scanner, and a watchlist for up to 20 items. Premium unlocks unlimited watchlist, AI narration, extended charts, P&L tracking, price alerts, and more for $2.99/month or $21.49/year."
+          "text": "Yes. Trendnable is free to download on the App Store and includes Hot Scores, 7 and 30-day price history, directional signals, a barcode scanner, and a watchlist for up to 20 items. Premium unlocks unlimited watchlist, AI narration, 90-day charts, P&L tracking, price alerts, Visual Scan, collection export, and more for $1.99/month or $14.99/year."
         }
       },
       {
@@ -277,8 +277,8 @@
     <div class="price-grid">
       <div>
         <span class="eyebrow reveal"><span class="dot"></span>Price History</span>
-        <h2 class="reveal d1" style="font-size: clamp(30px,4.4vw,52px); font-weight:800; letter-spacing:-0.03em; line-height:1.06; margin-top:14px;">14+ days of real sales, charted.</h2>
-        <p class="reveal d1" style="color:var(--muted); font-size:18px; margin-top:16px; line-height:1.5;">Daily price snapshots with sparkline charts. See median, low, high, and the delta from yesterday — so you always know whether you're early or late.</p>
+        <h2 class="reveal d1" style="font-size: clamp(30px,4.4vw,52px); font-weight:800; letter-spacing:-0.03em; line-height:1.06; margin-top:14px;">Up to 90 days of real sales, charted.</h2>
+        <p class="reveal d1" style="color:var(--muted); font-size:18px; margin-top:16px; line-height:1.5;">Daily price snapshots with 7D, 30D, and 90D windows. See median, low, high, and the delta from yesterday — so you always know whether you're early or late.</p>
         <div class="reveal d2" style="margin-top:26px; display:flex; gap:10px; flex-wrap:wrap;">
           <span class="pattern-chip" style="color:var(--text);">Median, low &amp; high</span>
           <span class="pattern-chip" style="color:var(--text);">Daily delta</span>
@@ -315,7 +315,7 @@
           <div class="stat"><div class="k">Median</div><div class="v mono">$182</div></div>
           <div class="stat"><div class="k">Low</div><div class="v mono">$148</div></div>
           <div class="stat"><div class="k">High</div><div class="v mono">$210</div></div>
-          <div class="stat"><div class="k">14d Δ</div><div class="v mono" style="color:var(--pos);">+23%</div></div>
+          <div class="stat"><div class="k">30d Δ</div><div class="v mono" style="color:var(--pos);">+23%</div></div>
         </div>
       </div>
     </div>
@@ -327,7 +327,7 @@
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow reveal"><span class="dot"></span>Browse &amp; Discover</span>
-      <h2 class="reveal d1">Eight categories. Ten fandoms. One feed.</h2>
+      <h2 class="reveal d1">Eight categories. Eight fandoms. One feed.</h2>
       <p class="reveal d1">Every category carries its own color identity, so the things you collect always feel like home.</p>
     </div>
     <div class="cat-grid" id="catGrid"></div>
@@ -391,30 +391,34 @@
         <div class="pprice">$0<small> /forever</small></div>
         <ul>
           <li><span class="ck" style="color:var(--pos)">✓</span> Hot Score for every item</li>
-          <li><span class="ck" style="color:var(--pos)">✓</span> 14-day price history</li>
+          <li><span class="ck" style="color:var(--pos)">✓</span> 7 &amp; 30-day price history</li>
           <li><span class="ck" style="color:var(--pos)">✓</span> Directional signal badge</li>
-          <li><span class="ck" style="color:var(--pos)">✓</span> Scan &amp; add to collection</li>
+          <li><span class="ck" style="color:var(--pos)">✓</span> Barcode scan</li>
           <li><span class="ck" style="color:var(--pos)">✓</span> Watchlist — up to 20 items</li>
           <li class="off"><span class="ck">—</span> "Why it's hot" AI narration</li>
-          <li class="off"><span class="ck">—</span> Extended history charts</li>
+          <li class="off"><span class="ck">—</span> Visual Scan (camera ID)</li>
+          <li class="off"><span class="ck">—</span> 90-day history charts</li>
           <li class="off"><span class="ck">—</span> Price alerts</li>
           <li class="off"><span class="ck">—</span> Sellability Score</li>
+          <li class="off"><span class="ck">—</span> Collection export (CSV)</li>
         </ul>
         <a href="#download" class="btn btn-ghost" style="margin-top:28px; width:100%; justify-content:center;">Get started free</a>
       </div>
       <div class="plan premium reveal d1">
         <div class="badge-prem">Premium</div>
         <div class="pname">Premium</div>
-        <div class="pprice">$2.99<small> /month</small></div>
-        <div style="font-size:13px; color:var(--muted); margin-top:6px;">or $21.49 / year &nbsp;<span style="background:rgba(61,214,140,0.16); color:var(--pos); font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px;">Save 40%</span></div>
+        <div class="pprice">$1.99<small> /month</small></div>
+        <div style="font-size:13px; color:var(--muted); margin-top:6px;">or $14.99 / year &nbsp;<span style="background:rgba(61,214,140,0.16); color:var(--pos); font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px;">Save 37%</span></div>
         <ul style="margin-top:20px;">
           <li><span class="ck" style="color:var(--pos)">✓</span> Everything in Free</li>
           <li><span class="ck" style="color:var(--pos)">✓</span> <strong>Unlimited</strong> watchlist</li>
           <li><span class="ck" style="color:var(--pos)">✓</span> Full "Why it's hot" AI narration</li>
-          <li><span class="ck" style="color:var(--pos)">✓</span> 30 / 90 / 365-day history charts</li>
+          <li><span class="ck" style="color:var(--pos)">✓</span> Visual Scan — identify items by camera</li>
+          <li><span class="ck" style="color:var(--pos)">✓</span> 90-day price history charts</li>
           <li><span class="ck" style="color:var(--pos)">✓</span> Collection P&amp;L — per item &amp; total</li>
           <li><span class="ck" style="color:var(--pos)">✓</span> Real-time price alerts</li>
           <li><span class="ck" style="color:var(--pos)">✓</span> Sellability Score</li>
+          <li><span class="ck" style="color:var(--pos)">✓</span> Collection export (CSV)</li>
           <li><span class="ck" style="color:var(--pos)">✓</span> Customized daily digest</li>
         </ul>
         <a href="#download" class="btn btn-primary" style="margin-top:28px; width:100%; justify-content:center;">Go Premium</a>
