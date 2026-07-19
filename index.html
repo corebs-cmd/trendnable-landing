@@ -66,7 +66,7 @@
       "logo": "https://trendnable.app/assets/trendnable-logo.png",
       "contactPoint": {
         "@type": "ContactPoint",
-        "email": "support@trendnable.app",
+        "email": "contact@trendnable.app",
         "contactType": "customer support"
       }
     }
@@ -96,7 +96,7 @@
         "name": "Is Trendnable free?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Trendnable is free to download on the App Store and includes Hot Scores, 7 and 30-day price history, directional signals, a barcode scanner, and a watchlist for up to 20 items. Premium unlocks unlimited watchlist, AI narration, 90-day charts, P&L tracking, price alerts, Visual Scan, collection export, and more for $1.99/month or $14.99/year."
+          "text": "Yes. Trendnable is free to download on the App Store and includes Hot Scores, 7 and 30-day price history, directional signals, a barcode scanner, and a watchlist for up to 20 items. Free users can also purchase a one-time collection export for $1.99. Premium unlocks unlimited watchlist, AI narration, 90-day and 1-year charts, P&L tracking, price alerts, Visual Scan, unlimited collection exports, and more for $1.99/month or $14.99/year."
         }
       },
       {
@@ -249,10 +249,8 @@
       <span class="pattern-chip">Confirmed breakout</span>
       <span class="pattern-chip">Quiet accumulation</span>
       <span class="pattern-chip">Catalyst spike</span>
-      <span class="pattern-chip">Volume surge</span>
-      <span class="pattern-chip">Momentum reversal</span>
-      <span class="pattern-chip">Demand drift</span>
-      <span class="pattern-chip">Price compression</span>
+      <span class="pattern-chip">False top</span>
+      <span class="pattern-chip">Stagnation risk</span>
     </div>
 
     <div class="feature-grid" style="margin-top:48px;">
@@ -277,8 +275,8 @@
     <div class="price-grid">
       <div>
         <span class="eyebrow reveal"><span class="dot"></span>Price History</span>
-        <h2 class="reveal d1" style="font-size: clamp(30px,4.4vw,52px); font-weight:800; letter-spacing:-0.03em; line-height:1.06; margin-top:14px;">Up to 90 days of real sales, charted.</h2>
-        <p class="reveal d1" style="color:var(--muted); font-size:18px; margin-top:16px; line-height:1.5;">Daily price snapshots with 7D, 30D, and 90D windows. See median, low, high, and the delta from yesterday — so you always know whether you're early or late.</p>
+        <h2 class="reveal d1" style="font-size: clamp(30px,4.4vw,52px); font-weight:800; letter-spacing:-0.03em; line-height:1.06; margin-top:14px;">Up to 1 year of real sales, charted.</h2>
+        <p class="reveal d1" style="color:var(--muted); font-size:18px; margin-top:16px; line-height:1.5;">Daily price snapshots with 7D, 30D, 90D, and 1Y windows. See median, low, high, and the delta from yesterday — so you always know whether you're early or late.</p>
         <div class="reveal d2" style="margin-top:26px; display:flex; gap:10px; flex-wrap:wrap;">
           <span class="pattern-chip" style="color:var(--text);">Median, low &amp; high</span>
           <span class="pattern-chip" style="color:var(--text);">Daily delta</span>
@@ -328,7 +326,7 @@
     <div class="section-head">
       <span class="eyebrow reveal"><span class="dot"></span>Browse &amp; Discover</span>
       <h2 class="reveal d1">Eight categories. Eight fandoms. One feed.</h2>
-      <p class="reveal d1">Every category carries its own color identity, so the things you collect always feel like home.</p>
+      <p class="reveal d1">Every category carries its own color identity, so the things you collect always feel like home. Search surfaces both actively tracked items and everything in our full catalog — even items not yet on the Hot list.</p>
     </div>
     <div class="cat-grid" id="catGrid"></div>
     <div class="fandom-row reveal d2" id="fandomRow"></div>
@@ -397,10 +395,9 @@
           <li><span class="ck" style="color:var(--pos)">✓</span> Watchlist — up to 20 items</li>
           <li class="off"><span class="ck">—</span> "Why it's hot" AI narration</li>
           <li class="off"><span class="ck">—</span> Visual Scan (camera ID)</li>
-          <li class="off"><span class="ck">—</span> 90-day history charts</li>
+          <li class="off"><span class="ck">—</span> 90-day &amp; 1-year history charts</li>
           <li class="off"><span class="ck">—</span> Price alerts</li>
-          <li class="off"><span class="ck">—</span> Sellability Score</li>
-          <li class="off"><span class="ck">—</span> Collection export (CSV)</li>
+          <li><span class="ck" style="color:var(--pos)">✓</span> Collection export — $1.99 per export</li>
         </ul>
         <a href="#download" class="btn btn-ghost" style="margin-top:28px; width:100%; justify-content:center;">Get started free</a>
       </div>
@@ -414,11 +411,11 @@
           <li><span class="ck" style="color:var(--pos)">✓</span> <strong>Unlimited</strong> watchlist</li>
           <li><span class="ck" style="color:var(--pos)">✓</span> Full "Why it's hot" AI narration</li>
           <li><span class="ck" style="color:var(--pos)">✓</span> Visual Scan — identify items by camera</li>
-          <li><span class="ck" style="color:var(--pos)">✓</span> 90-day price history charts</li>
+          <li><span class="ck" style="color:var(--pos)">✓</span> 90-day &amp; 1-year price history charts</li>
           <li><span class="ck" style="color:var(--pos)">✓</span> Collection P&amp;L — per item &amp; total</li>
           <li><span class="ck" style="color:var(--pos)">✓</span> Real-time price alerts</li>
-          <li><span class="ck" style="color:var(--pos)">✓</span> Sellability Score</li>
-          <li><span class="ck" style="color:var(--pos)">✓</span> Collection export (CSV)</li>
+          <li><span class="ck" style="color:var(--pos)">✓</span> Where to Buy — eBay, Mercari, PopnBeats</li>
+          <li><span class="ck" style="color:var(--pos)">✓</span> Unlimited collection exports (CSV)</li>
           <li><span class="ck" style="color:var(--pos)">✓</span> Customized daily digest</li>
         </ul>
         <a href="#download" class="btn btn-primary" style="margin-top:28px; width:100%; justify-content:center;">Go Premium</a>
@@ -474,7 +471,7 @@
         <a href="#">About</a>
         <a href="/privacy">Privacy</a>
         <a href="/terms">Terms</a>
-        <a href="mailto:support@trendnable.app">Support</a>
+        <a href="mailto:contact@trendnable.app">Support</a>
       </div>
     </div>
     <div class="foot-bottom">
