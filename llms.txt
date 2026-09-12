@@ -9,6 +9,7 @@ Trendnable is a mobile app that gives collectors the same data edge resellers ha
 - [Home](https://trendnable.app/): Full feature overview, pricing, and App Store download
 - [Privacy Policy](https://trendnable.app/privacy): How Trendnable collects and protects user data
 - [Terms of Use](https://trendnable.app/terms): Terms governing app usage and subscriptions
+- [Support](https://trendnable.app/support): FAQs, billing info, and customer support
 
 ## Core features
 
@@ -24,7 +25,7 @@ Trendnable is a mobile app that gives collectors the same data edge resellers ha
 ## Pricing
 
 - **Free** — $0 forever: Hot Score, 14-day price history, directional signal badge, barcode scanner, watchlist up to 20 items
-- **Premium** — $2.99/month or $21.49/year (save 40%): Unlimited watchlist, full AI narration, 30/90/365-day history charts, Collection P&L, real-time price alerts, Sellability Score, customized daily digest
+- **Premium** — $1.99/month or $14.99/year (save 37%): Unlimited watchlist, full AI narration, 30/90/365-day history charts, Collection P&L, real-time price alerts, Sellability Score, customized daily digest
 
 ## Categories tracked
 
