@@ -28,10 +28,31 @@
     fbq('track', 'PageView');
   }
 
+  // Apple App Analytics campaign tokens. Only appended when the visitor arrived
+  // from a Meta ad (utm_source=meta), so organic installs stay untagged.
+  var APPLE_PT = '101830132';
+  var CT_KEY = 'tn_apple_ct';
+
+  function rememberCampaign() {
+    var q = new URLSearchParams(location.search);
+    if (q.get('utm_source') === 'meta') {
+      sessionStorage.setItem(CT_KEY, 'meta_' + (q.get('utm_campaign') || 'unknown'));
+    }
+  }
+
   function fixStoreLinks() {
-    var links = document.querySelectorAll('a[href*="apps.apple.com/es/"]');
+    var ct = sessionStorage.getItem(CT_KEY);
+    var links = document.querySelectorAll('a[href*="apps.apple.com"]');
     for (var i = 0; i < links.length; i++) {
-      links[i].href = links[i].href.replace('apps.apple.com/es/', 'apps.apple.com/us/');
+      var a = links[i];
+      a.href = a.href.replace('apps.apple.com/es/', 'apps.apple.com/us/');
+      if (ct && a.href.indexOf('pt=') === -1) {
+        var u = new URL(a.href);
+        u.searchParams.set('pt', APPLE_PT);
+        u.searchParams.set('ct', ct.slice(0, 40));
+        u.searchParams.set('mt', '8');
+        a.href = u.toString();
+      }
     }
   }
 
@@ -75,6 +96,7 @@
   }
 
   function init() {
+    rememberCampaign();
     fixStoreLinks();
     trackStoreClicks();
     var consent = localStorage.getItem(KEY);
