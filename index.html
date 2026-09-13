@@ -32,6 +32,82 @@
 
   gtag('config', 'G-7GNBG8F42K');
 </script>
+<script>
+(function () {
+  var PIXEL_ID = '1803693433972097';
+  var KEY = 'tn_cookie_consent'; // 'granted' | 'denied'
+
+  function loadPixel() {
+    if (window.fbq) return;
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', PIXEL_ID);
+    fbq('track', 'PageView');
+  }
+
+  function fixStoreLinks() {
+    var links = document.querySelectorAll('a[href*="apps.apple.com/es/"]');
+    for (var i = 0; i < links.length; i++) {
+      links[i].href = links[i].href.replace('apps.apple.com/es/', 'apps.apple.com/us/');
+    }
+  }
+
+  function trackStoreClicks() {
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href*="apps.apple.com"]');
+      if (!a) return;
+      if (window.fbq) fbq('trackCustom', 'AppStoreClick', { location: a.className || 'link' });
+      if (window.gtag) gtag('event', 'app_store_click', { link_class: a.className || 'link' });
+    }, true);
+  }
+
+  function showBanner() {
+    var el = document.createElement('div');
+    el.id = 'tn-cookie-banner';
+    el.setAttribute('role', 'dialog');
+    el.setAttribute('aria-label', 'Cookie notice');
+    el.innerHTML =
+      '<span>We use cookies to measure how people find Trendnable. ' +
+      '<a href="/privacy" style="color:inherit;text-decoration:underline">Privacy</a></span>' +
+      '<span><button type="button" data-consent="denied">Decline</button>' +
+      '<button type="button" data-consent="granted">Accept</button></span>';
+    var css = document.createElement('style');
+    css.textContent =
+      '#tn-cookie-banner{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;' +
+      'display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap;' +
+      'background:#161617;color:#e6e3df;border:1px solid #333;border-radius:12px;padding:14px 18px;' +
+      'font:14px/1.4 system-ui,sans-serif;max-width:720px;margin:0 auto}' +
+      '#tn-cookie-banner button{margin-left:8px;padding:8px 14px;border-radius:8px;border:1px solid #444;' +
+      'background:transparent;color:#e6e3df;cursor:pointer;font:inherit}' +
+      '#tn-cookie-banner button[data-consent=granted]{background:#ff5c1e;border-color:#ff5c1e;color:#fff}';
+    document.head.appendChild(css);
+    document.body.appendChild(el);
+    el.addEventListener('click', function (e) {
+      var b = e.target.closest('button[data-consent]');
+      if (!b) return;
+      localStorage.setItem(KEY, b.getAttribute('data-consent'));
+      el.remove();
+      if (b.getAttribute('data-consent') === 'granted') loadPixel();
+    });
+  }
+
+  function init() {
+    fixStoreLinks();
+    trackStoreClicks();
+    var consent = localStorage.getItem(KEY);
+    if (consent === 'granted') loadPixel();
+    else if (consent !== 'denied') showBanner();
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1803693433972097&ev=PageView&noscript=1"/></noscript>
 <script type="application/ld+json">
 [
   {
